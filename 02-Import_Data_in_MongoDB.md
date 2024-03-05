@@ -26,16 +26,3 @@
     Replace `<database_name>`, `<collection_name>`, and `<path_to_csv_file>` with appropriate values.
 
 ---
-
-# MongoDB Operators Overview
-
-## Comparison Operators
-
----
-- `$eq`: Matches values that are equal to a specified value.
-- `$ne`: Matches values that are not equal to a specified value.
-- `$gt`: Matches values that are greater than a specified value.
-- `$gte`: Matches values that are greater than or equal to a specified value.
-- `$lt`: Matches values that are less than a specified value.
-- `$lte`: Matches values that are less than or equal to a specified value
----
