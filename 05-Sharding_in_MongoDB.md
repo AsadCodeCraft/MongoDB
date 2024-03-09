@@ -125,7 +125,7 @@ sh.splitAt("demo.zip", { Pincode : 400000})
 sh.splitAt("demo.zip", { Pincode : 600000})
 ```
 *Chunk will be like* 
-| Chunk | From       | To   | On Chunk |
+| Chunk | From       | To   | On Shard |
 |-------|------------|------|----------|
 | 1     | `MinKey()`   | 200000 | Shard1 |
 | 2     | 200000       | 400000 | Shard1 |
@@ -141,7 +141,7 @@ sh.splitAt("demo.zip", { Pincode : 400000}, "shard2")
 sh.splitAt("demo.zip", { Pincode : 600000}, "shard2")
 ```
 *After Moving Chunks*
-| Chunk | From       | To   | On Chunk |
+| Chunk | From       | To   | On Shard |
 |-------|------------|------|----------|
 | 1     | `MinKey()`   | 200000 | Shard1 |
 | 2     | 200000       | 400000 | Shard1 |
