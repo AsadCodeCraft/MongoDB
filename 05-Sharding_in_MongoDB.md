@@ -1,10 +1,9 @@
-## Starting Instances 
-
 *Figure For Reference*
 
 <img align="center" width="480"  src='./sharding.png'/>
 
-1. Config Server & ReplicaSet
+## A. Starting Instances
+1. Start Instance for Config Server & ReplicaSet
 ```javascript
 mongod --configsvr  --port 37017 --replSet configReplSet --dbpath "C:\MongoDB_Sharding\cfg"
 ```
@@ -14,7 +13,7 @@ mongod --configsvr  --port 37018 --replSet configReplSet --dbpath "C:\MongoDB_Sh
 ```
 
 
-2. Shard 1 & ReplicaSet
+2. Start Instance for Shard 1 & ReplicaSet
 ```javascript
 mongod --shardsvr --port 47017 --replSet shard1 --dbpath "C:\MongoDB_Sharding\shd1"
 ```
@@ -24,7 +23,7 @@ mongod --shardsvr --port 47018 --replSet shard1 --dbpath "C:\MongoDB_Sharding\sh
 ```
 
 
-3. Shard 2 & ReplicaSet
+3. Start Instance for Shard 2 & ReplicaSet
 ```javascript
 mongod --shardsvr --port 57017 --replSet shard2 --dbpath "C:\MongoDB_Sharding\shd2"
 ```
