@@ -33,7 +33,7 @@ mongod --shardsvr --port 57018 --replSet shard2 --dbpath "C:\MongoDB_Sharding\sh
 ```
 
 
-## Configure ReplicaSet for Each Instances
+## B. Configure ReplicaSet for Each Instances
 
 1. Configure ReplicaSet for ConfigDB
 ```javascript
@@ -66,13 +66,13 @@ rs.initiate({_id:"shard2",members:[{_id:0,host:"localhost:57017"},{_id:1,host:"l
 
 
 
-## Starting Mongos (i.e Router Server)
+## C. Launching Mongos (i.e Router Server)
 ```
 mongos --configdb configReplSet/localhost:37017,localhost:37018 --port 27017
 ```
 
 
-## Sharding Database
+## D. Sharding Database
 ### Connect to Mongos Shell 
 ```javascript
 mongosh --port 27017
