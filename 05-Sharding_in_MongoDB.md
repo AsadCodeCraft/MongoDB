@@ -104,6 +104,8 @@ sh.status()
 db.zip.createIndex({Pincode : 1})
 ```
 ### Sharding (Ranged Based) Collection using Shard Key 
+*Note:-* The default size of each chunk is `128 MB`
+- If the `collection` size is smaller than `128 MB`, sharding will result in only one `chunk` containing all the `documents`.
 ```javascript
 sh.shardCollection("demo.zip", { Pincode : 1} )
 ```
