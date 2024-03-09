@@ -130,7 +130,7 @@ sh.splitAt("demo.zip", { Pincode : 600000})
 | 1     | `MinKey()`   | 200000 | Shard1 |
 | 2     | 200000       | 400000 | Shard1 |
 | 3     | 400000       | 600000 | Shard1 |
-| 3     | 600000       | `MaxKey()` |  Shard1 |
+| 4     | 600000       | `MaxKey()` |  Shard1 |
 
 
 ### Move Chunk Manually From One Shard to Other
@@ -146,4 +146,4 @@ sh.splitAt("demo.zip", { Pincode : 600000}, "shard2")
 | 1     | `MinKey()`   | 200000 | Shard1 |
 | 2     | 200000       | 400000 | Shard1 |
 | 3     | 400000       | 600000 | Shard2 |
-| 3     | 600000       | `MaxKey()` |  Shard2 |
+| 4     | 600000       | `MaxKey()` |  Shard2 |
