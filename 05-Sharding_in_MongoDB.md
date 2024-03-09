@@ -125,15 +125,18 @@ sh.splitAt("demo.zip", { Pincode : 400000})
 sh.splitAt("demo.zip", { Pincode : 600000})
 ```
 *Chunk will be like* 
-| Chunk | From       | To   |
-|-------|------------|------|
-| 1     | `MinKey()`   | 200000 |
-| 2     | 200000       | 400000 |
-| 3     | 400000       | 600000 |
-| 3     | 600000       | `MaxKey()` |
+| Chunk | From       | To   | On Chunk |
+|-------|------------|------|----------|
+| 1     | `MinKey()`   | 200000 | Shard1 |
+| 2     | 200000       | 400000 | Shard1 |
+| 3     | 400000       | 600000 | Shard1 |
+| 3     | 600000       | `MaxKey()` |  Shard1 |
 
 
 ### Move Chunk Manually From One Shard to Other
 ```javascript
-sh.splitAt("demo.zip", { Pincode : 400000}, "shard1")
+sh.splitAt("demo.zip", { Pincode : 400000}, "shard2")
+```
+```javascript
+sh.splitAt("demo.zip", { Pincode : 600000}, "shard2")
 ```
