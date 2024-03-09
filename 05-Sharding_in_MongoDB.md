@@ -113,12 +113,25 @@ sh.shardCollection("demo.zip", { Pincode : 1} )
 db.zip.getShardDistribution()
 ```
 
-### Manually Splitting Chunks
+### Manually Splitting Chunk
 ```javascript
 sh.splitAt("demo.zip", { Pincode : 200000})
+```
+```javascript
 sh.splitAt("demo.zip", { Pincode : 400000})
+```
+```javascript
 sh.splitAt("demo.zip", { Pincode : 600000})
 ```
+*Chunk will be like* 
+| Chunk | From       | To   |
+|-------|------------|------|
+| 1     | `MinKey()`   | 200000 |
+| 2     | 200000       | 400000 |
+| 3     | 400000       | 600000 |
+| 3     | 600000       | `MaxKey()` |
+
+
 ### Move Chunk Manually From One Shard to Other
 ```javascript
 sh.splitAt("demo.zip", { Pincode : 400000}, "shard1")
