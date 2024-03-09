@@ -1,6 +1,6 @@
 ## Starting Instances 
 
-<img align="center" width="300"  src='./'/>
+<img align="center" width="300"  src='./sharding.png'/>
 
 1. Config Server & ReplicaSet
 ```javascript
