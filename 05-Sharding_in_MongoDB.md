@@ -109,7 +109,17 @@ sh.shardCollection("demo.zip", { Pincode : 1} )
 ```
  
 ### Checking Shard Data Distribution
-```
+```javascript
 db.zip.getShardDistribution()
 ```
 
+### Manually Splitting Chunks
+```javascript
+sh.splitAt("demo.zip", { Pincode : 200000})
+sh.splitAt("demo.zip", { Pincode : 400000})
+sh.splitAt("demo.zip", { Pincode : 600000})
+```
+### Move Chunk Manually From One Shard to Other
+```javascript
+sh.splitAt("demo.zip", { Pincode : 400000}, "shard1")
+```
