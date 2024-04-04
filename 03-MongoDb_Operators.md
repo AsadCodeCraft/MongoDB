@@ -14,7 +14,7 @@ Comparison operators are used to compare values in a query. Some common comparis
 - `$ne`: Matches all values that are not equal to a specified value.
 - `$in` : Matches any of the values specified in an array.
 
-#### Dataset Nanem: `bank.sales.csv` [Click to Download Dataset](https://github.com/AsadCodeCraft/MongoDB/blob/main/bank.sales.csv)
+*Dataset Name:* `bank.sales.csv` [Click to Download Dataset](https://github.com/AsadCodeCraft/MongoDB/blob/main/bank.sales.csv)
 ### Find one document where Value is greater than 100000
 ```javascript
 db.sales.findOne({ Value: { $gt: 100000 } })
