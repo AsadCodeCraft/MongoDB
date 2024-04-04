@@ -12,7 +12,7 @@ Comparison operators are used to compare values in a query. Some common comparis
 - `$lte`: Matches values that are less than or equal to a specified value.
 - `$ne`: Matches all values that are not equal to a specified value.
 - `$in` : Matches any of the values specified in an array.
-- 
+
 ### Find one document where Value is greater than 100000
 ```javascript
 db.sales.findOne({ Value: { $gt: 100000 } })
