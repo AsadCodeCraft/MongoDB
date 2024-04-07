@@ -1,5 +1,7 @@
 # MongoDb Replication
 
+<img align="center" width="480"  src='./replication.png'/>
+
 > ###  Note: Make sure to create a folder for each node (primary and secondary)
 
 ## Configure Primary Node (Port 27017)
