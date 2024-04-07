@@ -28,6 +28,45 @@ rs.initiate({_id: "rs", members: [{_id: 0, host: "localhost:27017"}, {_id: 1, ho
 ```javascript
 rs.status()
 ```
+Output:
+```
+{
+  set: 'rs',
+  members: [
+    {
+      _id: 0,
+      name: 'localhost:27017',
+      health: 1,
+      state: 1,
+      stateStr: 'PRIMARY',
+      uptime: 36,
+      syncSourceHost: '',
+      syncSourceId: -1,
+    },
+    {
+      _id: 1,
+      name: 'localhost:27018',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 19,
+      syncSourceHost: 'localhost:27017',
+      syncSourceId: 0,
+    },
+    {
+      _id: 2,
+      name: 'localhost:27019',
+      health: 1,
+      state: 2,
+      stateStr: 'SECONDARY',
+      uptime: 12,
+      syncSourceHost: 'localhost:27018',
+      syncSourceId: 1,
+    }
+  ],
+  ok: 1,
+  }
+```
 
 ## Create a Database and Collection in the Primary Node
 ```javascript
