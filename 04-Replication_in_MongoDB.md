@@ -3,6 +3,7 @@
 <img align="center" width="480"  src='./replication.png'/>
 
 > ###  Note: Make sure to create a folder for each node (primary and secondary)
+<img align="center" width="250"  src='./replsetfolder.png'/>
 
 ## Configure Primary Node (Port 27017)
 ```javascript
