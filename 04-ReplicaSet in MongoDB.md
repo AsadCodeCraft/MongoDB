@@ -30,8 +30,6 @@ rs.status()
 ```
 Output:
 ```
-{
-  set: 'rs',
   members: [
     {
       _id: 0,
@@ -63,9 +61,7 @@ Output:
       syncSourceHost: 'localhost:27018',
       syncSourceId: 1,
     }
-  ],
-  ok: 1,
-  }
+  ]
 ```
 
 ## Create a Database and Collection in the Primary Node
