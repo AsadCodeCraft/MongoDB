@@ -29,7 +29,7 @@ rs.initiate({_id: "rs", members: [{_id: 0, host: "localhost:27017"}, {_id: 1, ho
 rs.status()
 ```
 Output:
-```
+```javascript
   members: [
     {
       _id: 0,
@@ -73,9 +73,10 @@ db.testcollection.insertOne({name: "example"})
 ```
 
 ## Check if Database and Collection Exist in Secondary Nodes
-> Connect to Secondary Node 1 (Port 27018)
+### > Connect to Secondary Node 1 (Port 27018)
+```javascript
 mongosh --port 27018
-
+```
 ## Check if the database exists
 ```javascript
 use testdb
