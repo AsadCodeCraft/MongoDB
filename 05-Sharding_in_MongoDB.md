@@ -135,10 +135,10 @@ sh.splitAt("demo.zip", { Pincode : 600000})
 
 ### Move Chunk Manually From One Shard to Other
 ```javascript
-sh.splitAt("demo.zip", { Pincode : 400000}, "shard2")
+sh.moveChunk("demo.zip", { Pincode : 400000}, "shard2")
 ```
 ```javascript
-sh.splitAt("demo.zip", { Pincode : 600000}, "shard2")
+sh.moveChunk("demo.zip", { Pincode : 600000}, "shard2")
 ```
 *After Moving Chunks*
 | Chunk | From       | To   | On Shard |
